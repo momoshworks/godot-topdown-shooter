@@ -1,0 +1,14 @@
+[gd_resource type="TileSet" load_steps=2 format=3 uid="//background_tileset"]
+
+[ext_resource type="Texture2D" path="res://assets/sprites/tiles/grass.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="1"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+tile_0 = {
+"atlas_coords": Vector2i(0, 0),
+"texture": SubResource("1"),
+"modulate": Color(0.3, 0.5, 0.3, 1)
+}

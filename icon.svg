@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Background circle -->
+  <circle cx="128" cy="128" r="120" fill="#2C3E50"/>
+  <!-- Gun silhouette -->
+  <path d="M80 128 L120 128 L120 100 L180 100 L180 156 L120 156 L120 128 Z" fill="#E74C3C"/>
+  <!-- Crosshair -->
+  <circle cx="180" cy="128" r="30" fill="none" stroke="#ECF0F1" stroke-width="4"/>
+  <line x1="180" y1="98" x2="180" y2="110" stroke="#ECF0F1" stroke-width="3"/>
+  <line x1="180" y1="146" x2="180" y2="158" stroke="#ECF0F1" stroke-width="3"/>
+  <line x1="150" y1="128" x2="162" y2="128" stroke="#ECF0F1" stroke-width="3"/>
+  <line x1="198" y1="128" x2="210" y2="128" stroke="#ECF0F1" stroke-width="3"/>
+  <!-- Player indicator -->
+  <circle cx="128" cy="128" r="16" fill="#3498DB"/>
+  <circle cx="128" cy="128" r="8" fill="#2980B9"/>
+</svg>

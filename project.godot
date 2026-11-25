@@ -1,0 +1,99 @@
+[application]
+
+config/name="Top-Down Shooter RPG"
+config/icon="res://icon.svg"
+run/main_scene="res://scenes/main.tscn"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/resizable=true
+window/mode=2
+window/vsync_mode=1
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+canvas_textures/default_texture_filter=1
+canvas_textures/default_texture_repeat=0
+
+[input]
+
+move_up={
+"deadzone": 0.5,
+"events": [
+{"type": "Key", "keycode": 87, "physical_keycode": 26},
+{"type": "Key", "keycode": 38, "physical_keycode": 82}
+],
+"type": "Axis1D"
+}
+move_down={
+"deadzone": 0.5,
+"events": [
+{"type": "Key", "keycode": 83, "physical_keycode": 22},
+{"type": "Key", "keycode": 40, "physical_keycode": 81}
+],
+"type": "Axis1D"
+}
+move_left={
+"deadzone": 0.5,
+"events": [
+{"type": "Key", "keycode": 65, "physical_keycode": 4},
+{"type": "Key", "keycode": 37, "physical_keycode": 80}
+],
+"type": "Axis1D"
+}
+move_right={
+"deadzone": 0.5,
+"events": [
+{"type": "Key", "keycode": 68, "physical_keycode": 7},
+{"type": "Key", "keycode": 39, "physical_keycode": 79}
+],
+"type": "Axis1D"
+}
+shoot={
+"deadzone": 0.5,
+"events": [
+{"type": "Key", "keycode": 32, "physical_keycode": 44}
+],
+"type": "Action"
+}
+dash={
+"deadzone": 0.5,
+"events": [
+{"type": "Key", "keycode": 16, "physical_keycode": 42},
+{"type": "Key", "keycode": 17, "physical_keycode": 37}
+],
+"type": "Action"
+}
+interact={
+"deadzone": 0.5,
+"events": [
+{"type": "Key", "keycode": 69, "physical_keycode": 8},
+{"type": "Key", "keycode": 13, "physical_keycode": 28}
+],
+"type": "Action"
+}
+pause={
+"deadzone": 0.5,
+"events": [
+{"type": "Key", "keycode": 27, "physical_keycode": 41},
+{"type": "Key", "keycode": 80, "physical_keycode": 25}
+],
+"type": "Action"
+}
+
+[autoload]
+
+GameManager="res://scripts/managers/game_manager.gd"
+AudioManager="res://scripts/managers/audio_manager.gd"
+SaveManager="res://scripts/managers/save_manager.gd"
+
+[physics]
+
+physics/common/physics_ticks_per_second=60
+
+[physics_2d]
+
+physics_2d/default_gravity=0
